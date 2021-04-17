@@ -27,14 +27,17 @@ function selectCountriesRender(arr) {
         clearSelect()
         renderCountriesCard(arr);
         return
-    } if (arr.length >= 2 && arr.length <= 10) {
+    }
+    if (arr.length >= 2 && arr.length <= 10) {
         clearSelect()
         renderCountriesList(arr)
         return
-    } else {
+    }
+    if (arr.length > 10) {
         clearSelect();
         alert({ text: 'Too many matches found. Please enter a more specific query!' })
-    }
+        return
+    } else { alert({text: 'Countries not found'}) }
 }
 
 function renderCountriesCard(countries) {
