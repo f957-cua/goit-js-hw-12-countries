@@ -37,7 +37,7 @@ function selectCountriesRender(arr) {
         clearSelect();
         alert({ text: 'Too many matches found. Please enter a more specific query!' })
         return
-    } else { alert({text: 'Countries not found'}) }
+    }
 }
 
 function renderCountriesCard(countries) {
